@@ -39,5 +39,13 @@ const entrepreneurs = [
   console.log(item.first + " " + item.last + " " +"a" + " " + age + " " + "ans");
   });
 
-
+console.log("Les noms de famille des entrepreneurs par ordre alphabétique");
+entrepreneurs.sort(function compare(a,b) {
+    if (a.last < b.last)
+    return -1;
+    if (a.last > b.last)
+    return 1;
+    return 0;
+});
+console.log(entrepreneurs);
   
